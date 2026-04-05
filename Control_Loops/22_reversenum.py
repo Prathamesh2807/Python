@@ -1,4 +1,8 @@
-list = [1,2,3,4,5,6,7,8,9]
+num = int(input("enter the number : "))
+rev = 0
+while (num > 0):
+    d = num % 10 #last digit
+    rev = rev * 10 + d
+    num = num // 10
 
-for i in list[ ::-2] :
-    print(i , end = ' ')
+print("reverse no of is : " , rev)
